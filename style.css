@@ -17,15 +17,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
     min-height: 95vh;
+
+    margin: 0;
+
     background-color:  hsl(221, 100%, 96%);
 }
 
 main {
     display: flex;
 
-    width: 40rem;
-    height: 25rem;
+    width: clamp(360px, 40rem, 100%);
+    height: clamp(40%, 25rem, 100%);
 
     border-radius: 15px;
 
@@ -35,15 +39,13 @@ main {
 }
 
 
-
-
 .result {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    width: 50%;
+    min-width: 50%;
 
     border-radius: 15px;
 
@@ -84,8 +86,9 @@ main {
     flex-direction: column;
     justify-content:space-around;
     align-items: center;
+    gap: 1rem;
 
-    width: 50%;
+    min-width: 50%;
 
     border-radius: 15px;
 }
@@ -139,6 +142,8 @@ main {
     background-color: hsl(224, 30%, 27%);
 
     cursor: pointer;
+    outline: none;
+    margin-bottom: 1rem;
 }
 
 .summary button:active{
@@ -153,4 +158,16 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-}   
+}  
+
+
+
+@media only screen and (max-width: 376px) {
+    main {
+        flex-direction: column;
+    }
+    .result {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+}
