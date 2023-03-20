@@ -2,46 +2,61 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
+  <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Results summary component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
-  Your Result
-  76
-  of 100
+  <div class="card">
+    <div class="result">
 
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
+      <h3>Your Result</h3>
 
-  Reaction
-  80 / 100
+      <div class="score">
+        76
+        of 100
+      </div>
 
-  Memory
-  92 / 100
+      <h2>Great</h2>
+      
+      <p>You scored higher than 65% of the people who have taken these tests.</p>
+      
+    </div>
+    <div class="summary">
 
-  Verbal
-  61 / 100
+      <h3>Summary</h3>
 
-  Visual
-  72 / 100
+      <div class="category">
+        <div class="image"><img src="assets\images\icon-memory.svg" alt="memory-icon">Memory</div>
+        <div class="points">80<span> / 100</span></div>
+      </div>
+      <div class="category">
+        <div class="image"><img src="assets\images\icon-reaction.svg" alt="reaction-icon">Reaction</div>
+        <div class="points">92<span> / 100</span></div>
+      </div>
+      <div class="category">
+        <div class="image"><img src="assets\images\icon-verbal.svg" alt="verbal-icon">Verbal</div>
+        <div class="points">61<span> / 100</span></div>
+      </div>
+      <div class="category">
+        <div class="image"><img src="assets\images\icon-visual.svg" alt="visual-icon">Visual</div>
+        <div class="points">72<span> / 100</span></div>
+      </div>
+    
+      <button>Continue</button>
+      
+    </div>
+  </div>
 
-  Continue
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#sutaC">sutaC</a>.
   </div>
 </body>
 </html>
