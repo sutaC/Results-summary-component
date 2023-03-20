@@ -8,13 +8,87 @@ p {
     font-size: 18px;
 }
 
+.lite-text {
+    opacity: 0.8;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+    background-color:  hsl(221, 100%, 96%);
+}
+
+main {
+    display: flex;
+
+    width: 40rem;
+    height: 25rem;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    background-color: hsl(0, 0%, 100%);
+}
 
 
 
-.attribution {
+
+.result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 50%;
+
+    border-radius: 15px;
+
+    color:  hsl(0, 0%, 100%);
+
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.result p {
+    padding: 0 3rem;
+    font-size: 1rem;
+}
+
+.result h3 {
+    font-size: 1.6rem;
+    margin-bottom: 0;
+}
+
+.score {
+    width: 10rem;
+    height: 10rem;
+    
+    border-radius: 50rem;
+
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+
+}
+
+.score h1 {
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+
+
+.summary {
+    border-radius: 15px;
+}
+
+
+
+footer {
     margin: auto;
     text-align: center;
     position: fixed;
     bottom: 0;
     width: 100%;
-}
+}   
